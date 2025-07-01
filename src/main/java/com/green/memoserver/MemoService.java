@@ -4,6 +4,8 @@ import com.green.memoserver.model.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -30,5 +32,4 @@ public class MemoService {
     public int deleteById(int id) {
         return memoMapper.deleteById(id);
     }
-
 }
